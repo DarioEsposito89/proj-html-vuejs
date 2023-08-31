@@ -2,18 +2,18 @@
 
 export default {
 
-  components: {
-    
-  }
+    components: {
+
+    }
 }
 
 </script>
 
 
 <template>
-  
+
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use './styles/general.scss';
 </style>
