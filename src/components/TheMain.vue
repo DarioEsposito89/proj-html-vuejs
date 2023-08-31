@@ -2,13 +2,14 @@
 <script>
 
 // import vue components codes
+import TheConsultants from './TheConsultants.vue'
 
 export default{
     // name
     name: "TheMain",
 
     components:{
-        
+        TheConsultants,
         
     }
 }
@@ -22,7 +23,7 @@ export default{
     
     <!-- main -->
     <main>
-    
+        <TheConsultants></TheConsultants>
     </main>
     <!-- /main section -->
 
