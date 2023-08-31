@@ -5,40 +5,43 @@ export default {
     name: "TheHeader",
     components: {
         store,
-        navigationLinks: [
-
-            {
-                voice: "HOME",
-                href: "#home"
-            },
-
-            {
-                voice: "ABOUT",
-                href: "#about"
-            },
-
-            {
-                voice: "PROJECTS",
-                href: "#projects"
-            },
-
-            {
-                voice: "SERVICES",
-                href: "#services"
-            },
-
-            {
-                voice: "BLOG",
-                href: "#blog"
-            },
-
-            {
-                voice: "CONTACT",
-                href: "#contact"
-            }
-        ],
     },
+    data() {
+        return {
+            navigationLinks: [
 
+                {
+                    voice: "HOME",
+                    href: "#home"
+                },
+
+                {
+                    voice: "ABOUT",
+                    href: "#about"
+                },
+
+                {
+                    voice: "PROJECTS",
+                    href: "#projects"
+                },
+
+                {
+                    voice: "SERVICES",
+                    href: "#services"
+                },
+
+                {
+                    voice: "BLOG",
+                    href: "#blog"
+                },
+
+                {
+                    voice: "CONTACT",
+                    href: "#contact"
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -47,13 +50,13 @@ export default {
 <template>
     <header data-aos="fade-down" data-aos-duration="1000"   id="home">
         <img src="../assets/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="consulting people" class="background-img">
-        <nav>
+        <nav class="mx-5 mb-5">
             <div class="logo" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000" >
                 <img src="../assets/images/logotype.png" alt="Phlox logo">
             </div>
             <ul>
-                <li v-for="item in navigationLinks">
-                    <a :href="item.href">{{ item.voice }}</a>
+                <li v-for="(item, index) in navigationLinks" :key="index">
+                    <a class="text-white" :href="item.href">{{ item.voice }}</a>
                 </li>
             </ul>
         </nav>
@@ -96,7 +99,7 @@ nav{
             transition-duration: .5s;
 
             &:hover{
-                opacity: 1;
+                opacity: 2;
                 border-top: 3px solid white;
             }
         }
@@ -108,7 +111,7 @@ nav{
 
         // img formatting section
         img{
-            width: 112px;
+            width: 120px;
         }
     }
 
