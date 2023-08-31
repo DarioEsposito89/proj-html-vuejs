@@ -1,10 +1,8 @@
-// 1 - Creo un Oggetto Reattivo da usare come Store
-import { reactive } from 'vue';
+// store data code
+import { reactive } from "vue";
 
-const store = reactive({
+// // store data for dinamycs links
+export const store = reactive({
 
     
 })
-
-// 3 - Rendo i Dati di Store accessibili esportandoli
-export default store;
