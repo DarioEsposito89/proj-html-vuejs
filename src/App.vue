@@ -11,7 +11,7 @@ export default {
 
 
 <template>
-  
+  <div class="container bg-warning">fsdsf</div>
 </template>
 
 <style lang="scss">
