@@ -3,6 +3,7 @@
 
 // import vue components codes
 import TheConsultants from './TheConsultants.vue'
+import TheAboutUs from './TheAboutUs.vue';
 
 export default{
     // name
@@ -10,6 +11,7 @@ export default{
 
     components:{
         TheConsultants,
+        TheAboutUs,
         
     }
 }
@@ -24,6 +26,7 @@ export default{
     <!-- main -->
     <main>
         <TheConsultants></TheConsultants>
+        <TheAboutUs></TheAboutUs>
     </main>
     <!-- /main section -->
 
