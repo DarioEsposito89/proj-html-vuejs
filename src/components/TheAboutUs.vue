@@ -49,12 +49,16 @@ export default{
     <!-- /about us section -->
     
     <!-- help section -->
-    <section class="help-section green-btn">
+    <section class="help-section green-btn d-flex">
 
         <!-- help -->
         <div class="help">
-            <h2>WE HELP TO DELIVER THE BUSINESS CASE</h2>
-            <p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow.</p>
+            <div class="row row-cols-2 d-flex justify-content-center align-items-center">
+                <div class="col-3"><h2>WE HELP TO DELIVER THE BUSINESS CASE</h2></div>
+                <div class="col-4"><p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow.</p>
+            </div></div>
+            
+            
         </div>
         <!-- /help -->
 
@@ -138,37 +142,27 @@ export default{
     
 }
 
-
 .help-section{
     position: relative;
-    width: 100%;
-
-    
-    a{
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        color: $text;
-    }
-
-    
     .help{
-        width: 60%;
+        height: 300px;
         display: flex;
-        margin: 0 auto;
-        
-        
-        h2, p{
-            padding: 3rem 2rem;
-            color: #1f1e38;
-        }
-        
-        
-        p{
-            width: 60%;
-        }
+        align-items: center;
     }
-}
+        // anchor formatting section
+        a{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            color: $text;
+        }
 
+        // h2, p tipography
+        p{
+                padding: 3rem 2rem;
+                color: #1f1e38;
+            }
+            
+        }
 </style>
 <!-- /style section -->
