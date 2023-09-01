@@ -64,7 +64,10 @@ export default {
             <!-- jumbotron container -->
             <div class="jumbotron-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
                 <div class="titles-jumbotron">
-                    <h3 class="pseudo">ALWATS THE BEST WAY YOU NEED IT</h3>
+                    <div class="container-subtitle d-flex align-items-center">
+                        <div class="line-green-header"></div>
+                        <h3 class="pseudo">ALWATS THE BEST WAY YOU NEED IT</h3>
+                    </div>
                     <h1>THE BEST<br>BUSINESS<br>CONSULTING</h1>
                 </div>
                 <div class="btn-jumbotron" data-aos="fade-right"  data-aos-duration="1500">
@@ -124,8 +127,8 @@ header{
     .background-img{
         position: absolute;
         width: 68%;
-        height: 800px;
-        max-height: 100%;
+        height: 823px;
+        min-height: 100%;
         object-fit: cover;
         top: 0px;
         right: 0px;
@@ -160,6 +163,12 @@ header{
         h1{
             font-family: 'Bai Jamjuree', sans-serif;
             font-size: 4.5rem;
+        }
+
+        .line-green-header {
+            height: 3px;
+            width: 60px;
+            background-color: #39ffbf;
         }
 
         // h3 tipography
