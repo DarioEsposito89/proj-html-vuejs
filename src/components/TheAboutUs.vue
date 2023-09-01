@@ -3,7 +3,7 @@
 
 export default{
     // name
-    name:"AppAboutUs",
+    name:"TheAboutUs",
 
     data(){
         return{
