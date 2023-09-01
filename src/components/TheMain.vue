@@ -2,8 +2,10 @@
 <script>
 
 // import vue components codes
-import TheConsultants from './TheConsultants.vue'
+import TheConsultants from './TheConsultants.vue';
 import TheAboutUs from './TheAboutUs.vue';
+import TheProject from './TheProject.vue';
+
 
 export default{
     // name
@@ -12,6 +14,8 @@ export default{
     components:{
         TheConsultants,
         TheAboutUs,
+        TheProject,
+        
         
     }
 }
@@ -27,6 +31,8 @@ export default{
     <main>
         <TheConsultants></TheConsultants>
         <TheAboutUs></TheAboutUs>
+        <TheProject></TheProject>
+        
     </main>
     <!-- /main section -->
 

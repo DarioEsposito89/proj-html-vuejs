@@ -39,3 +39,14 @@ ul{
 .grey-btn{
     background-color: #1f1e38;
 }
+
+// pseudo elements general formatting section
+// before pseudo general
+.pseudo::before{
+    background-color: #39ffbf;
+}
+
+// after pseudo general
+.pseudo::after{
+    background-color: #39ffbf;
+}
