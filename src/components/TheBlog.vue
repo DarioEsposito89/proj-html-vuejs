@@ -115,6 +115,14 @@ section{
                 color: $text;
                 font-size: 2rem;
             }
+
+            button{
+
+                &:hover{
+                    color: white;
+                    background-color: #f81d39;
+                }
+            }
         }
 
         // blog cards formatting section
