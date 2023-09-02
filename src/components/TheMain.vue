@@ -7,6 +7,7 @@ import TheAboutUs from './TheAboutUs.vue';
 import TheProject from './TheProject.vue';
 import TheTestimonial from './TheTestimonial.vue';
 import TheBlog from './TheBlog.vue';
+import TheTalkAboutWork from './TheTalkAboutWork.vue';
 
 
 export default{
@@ -19,6 +20,7 @@ export default{
         TheProject,
         TheTestimonial,
         TheBlog,
+        TheTalkAboutWork,
         
         
     }
@@ -38,6 +40,7 @@ export default{
         <TheProject></TheProject>
         <TheTestimonial></TheTestimonial>
         <TheBlog></TheBlog>
+        <TheTalkAboutWork></TheTalkAboutWork>
 
         
     </main>
