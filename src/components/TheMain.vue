@@ -34,7 +34,7 @@ export default{
         <TheConsultants></TheConsultants>
         <TheAboutUs></TheAboutUs>
         <TheProject></TheProject>
-        <TheTestimonail></TheTestimonail>
+        <TheTestimonial></TheTestimonial>
         
     </main>
     <!-- /main section -->
