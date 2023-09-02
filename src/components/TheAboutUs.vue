@@ -33,9 +33,9 @@ export default{
 
             <!-- container text -->
             <div class="container-text">
-                <div class="container-subtitle d-flex align-items-center">
-                    <div class="line-green-aboutus"></div>
-                    <h2 class="pseudo">ABOUT US</h2>
+                <div class="container-subtitle d-flex align-items-center gap-2">
+                    <div class="line-green"></div>
+                    <h2>ABOUT US</h2>
                 </div>
                 <h3>WE MAKE YOUR STRATEGY WORK</h3>
                 <p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow plants are noticed by when i hear the buzz of the title world among the stalks, and grow familiar indescribable forms of the insects, and flies, then i feel the presence of the Almighty.</p>
@@ -101,13 +101,6 @@ export default{
         width: 40%;
         padding-left: 6rem;
 
-        .line-green-aboutus{
-            height: 3px;
-            width: 60px;
-            background-color: #39ffbf;
-        }
-
-        
         .container-text{
             width: 80%;
         }
@@ -116,15 +109,6 @@ export default{
         h2{
             color: $text;
             font-size: .8rem;
-
-            
-            &::before{
-                content:"";
-                display: inline-block;
-                width: 33px;
-                height: 3px;
-                margin-right: 10px;
-            }
         }
 
         

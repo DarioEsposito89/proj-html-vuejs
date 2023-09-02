@@ -91,7 +91,10 @@ export default{
         <div class="project">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="title-project col-5 ms-5">
-                    <h2 class="pseudo">PROJECT</h2>
+                    <div class="container-subtitle d-flex align-items-center gap-2">
+                        <div class="line-green"></div>
+                        <h2>PROJECT</h2>
+                    </div>
                     <h3>OUR EXPERT TRUSTED CONSULTANTS<br>HELP CLIENTS</h3>
                 </div>
                 <!-- move slider block -->
@@ -149,16 +152,7 @@ export default{
     h2{
         color: $text;
         font-size: .8rem;
-
-                
-            &::before{
-                content:"";
-                display: inline-block;
-                width: 33px;
-                height: 3px;
-                margin-right: 10px;
-            }
-        }
+    }
 
             
         h3{

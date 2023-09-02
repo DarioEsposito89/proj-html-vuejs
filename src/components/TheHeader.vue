@@ -64,9 +64,9 @@ export default {
             <!-- jumbotron container -->
             <div class="jumbotron-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
                 <div class="titles-jumbotron">
-                    <div class="container-subtitle d-flex align-items-center">
-                        <div class="line-green-header"></div>
-                        <h3 class="pseudo">ALWATS THE BEST WAY YOU NEED IT</h3>
+                    <div class="container-subtitle d-flex align-items-center gap-2">
+                        <div class="line-green"></div>
+                        <h3>ALWATS THE BEST WAY YOU NEED IT</h3>
                     </div>
                     <h1>THE BEST<br>BUSINESS<br>CONSULTING</h1>
                 </div>
@@ -150,25 +150,10 @@ header{
         width: 80%;
         margin: 0 auto;
 
-        // pseudo
-        h3::before{
-            content:"";
-            display: inline-block;
-            width: 33px;
-            height: 3px;
-            margin-right: 10px;
-        }
-
         // h1 tipography
         h1{
             font-family: 'Bai Jamjuree', sans-serif;
             font-size: 4.5rem;
-        }
-
-        .line-green-header {
-            height: 3px;
-            width: 60px;
-            background-color: #39ffbf;
         }
 
         // h3 tipography
