@@ -48,10 +48,10 @@ export default {
 
 <!-- tempalte section -->
 <template>
-    <header data-aos="fade-down" data-aos-duration="1000"   id="home">
+    <header id="home">
         <img src="../assets/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="consulting people" class="background-img">
         <nav class="mx-5 mb-5">
-            <div class="logo" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000" >
+            <div class="logo">
                 <img src="../assets/images/logotype.png" alt="Phlox logo">
             </div>
             <ul>
@@ -62,7 +62,7 @@ export default {
         </nav>
         <div class="jumbotron">
             <!-- jumbotron container -->
-            <div class="jumbotron-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
+            <div class="jumbotron-container">
                 <div class="titles-jumbotron">
                     <div class="container-subtitle d-flex align-items-center gap-2">
                         <div class="line-green"></div>
@@ -70,7 +70,7 @@ export default {
                     </div>
                     <h1>THE BEST<br>BUSINESS<br>CONSULTING</h1>
                 </div>
-                <div class="btn-jumbotron" data-aos="fade-right"  data-aos-duration="1500">
+                <div class="btn-jumbotron">
                     <a href="#"><button type="button" class="btn green-btn btn-lg rounded-0 py-3 px-5 me-4">READ MORE</button></a>
                     <a href="#"><i class="fa-solid fa-play rounded-circle p-4"></i></a>
                 </div>
@@ -126,8 +126,8 @@ header{
     // background image formatting section
     .background-img{
         position: absolute;
-        width: 68%;
-        height: 823px;
+        width: 62%;
+        height: 846px;
         min-height: 100%;
         object-fit: cover;
         top: 0px;
@@ -153,12 +153,17 @@ header{
         // h1 tipography
         h1{
             font-family: 'Bai Jamjuree', sans-serif;
-            font-size: 4.5rem;
+            font-size: 106px;
+            font-weight: 700px;
+            line-height: 93px;
         }
 
         // h3 tipography
         h3{
-            font-size: .8rem;
+            font-size: 16px;
+            font-weight: 400px;
+            line-height: 19px;
+            letter-spacing: 2.8px;
         }
 
         // paly botton formatting section

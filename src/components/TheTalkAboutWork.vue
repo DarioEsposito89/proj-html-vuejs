@@ -45,6 +45,10 @@ section{
     align-items: center;
     color: $text;
 
+    h2{
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 3rem;
+    }
     // p
     p{
         color: $paragraph;

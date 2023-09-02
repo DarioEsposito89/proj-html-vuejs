@@ -90,12 +90,12 @@ export default{
         <!-- project container -->
         <div class="project">
             <div class="row d-flex justify-content-between align-items-center">
-                <div class="title-project col-5 ms-5">
+                <div class="title-project col-6 ms-5">
                     <div class="container-subtitle d-flex align-items-center gap-2">
                         <div class="line-green"></div>
                         <h2>PROJECT</h2>
                     </div>
-                    <h3>OUR EXPERT TRUSTED CONSULTANTS<br>HELP CLIENTS</h3>
+                    <h3>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h3>
                 </div>
                 <!-- move slider block -->
                 <div class="move-slider col-2 text-white">
@@ -151,14 +151,17 @@ export default{
 
     h2{
         color: $text;
-        font-size: .8rem;
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 25px;
     }
 
             
         h3{
+            font-family: 'Bai Jamjuree', sans-serif;
             padding: 1.5rem 0;
             color: $text;
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         ul{

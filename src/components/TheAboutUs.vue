@@ -107,14 +107,19 @@ export default{
         
         h2{
             color: $text;
-            font-size: .8rem;
+            font-size: 16px;
+            font-weight: 400px;
+            line-height: 25px;
         }
 
         
         h3{
+            font-family: 'Bai Jamjuree', sans-serif;
             padding: 1.5rem 0;
             color: $text;
-            font-size: 2rem;
+            font-size: 3rem;
+            line-height: 65px;
+            font-weight: 700;
         }
 
         
@@ -149,6 +154,10 @@ export default{
             bottom: 0px;
             right: 0px;
             color: $text;
+        }
+        
+        h2{
+            font-family: 'Bai Jamjuree', sans-serif;
         }
 
         // h2, p tipography

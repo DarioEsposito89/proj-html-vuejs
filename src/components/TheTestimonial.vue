@@ -71,7 +71,7 @@ export default{
         <!-- /testimonial title block -->
 
         <!-- testimonial list block -->
-        <div class="testimonial-list" data-aos="zoom-in-left" data-aos-duration="3000">
+        <div class="testimonial-list">
             <div class="testimonial" v-for="(item, index) in testimonialList" @mouseenter="changeMouse(item)" @mouseleave="deleteMouse(item)" :class="item.mouse ? `background-${index + 1}`: ''">
                 <p>{{ item.description }}</p>
                 <h4>{{ item.title }}</h4>
@@ -103,15 +103,18 @@ export default{
     
         // h2 tipography
         h2{
-            font-size: .8rem;
+            font-size: 16px;
+            font-weight: 400px;
+            line-height: 25px;
             text-align: right;
         }
     }
 
     // h3 tipography
     h3{
+        font-family: 'Bai Jamjuree', sans-serif;
         text-align: right;
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 1.5rem;
     }
 
@@ -147,6 +150,7 @@ export default{
 
     // h4 tipography
     h4{
+        font-family: 'Bai Jamjuree', sans-serif;
         margin-bottom: .5rem;
         color: #1f1e38;
     }

@@ -95,7 +95,9 @@ section{
 
         // h2 tipography
         h2{
-            font-size: .8rem;
+            font-size: 16px;
+            font-weight: 400px;
+            line-height: 25px;
         }
         
         // h2 tipography
@@ -112,8 +114,9 @@ section{
 
             // h3 tipography
             h3{
+                font-family: 'Bai Jamjuree', sans-serif;
                 color: $text;
-                font-size: 2rem;
+                font-size: 3rem;
             }
 
             button{
@@ -161,6 +164,7 @@ section{
 
                 // h2 tipography
                 h2{
+                    font-family: 'Bai Jamjuree', sans-serif;
                     color: #1f1e38;;
                 }
 
