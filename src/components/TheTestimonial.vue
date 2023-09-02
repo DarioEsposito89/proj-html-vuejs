@@ -96,7 +96,7 @@ export default{
 
 // testimonial title formatting section
 .testimonial-title{
-    
+    margin-right: 50px;
     .container-subtitle{
         display: flex;
         justify-content: right;
@@ -112,6 +112,7 @@ export default{
     h3{
         text-align: right;
         font-size: 2rem;
+        margin-top: 1.5rem;
     }
 
     // h2, h3 tipography
