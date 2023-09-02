@@ -5,6 +5,7 @@
 import TheConsultants from './TheConsultants.vue';
 import TheAboutUs from './TheAboutUs.vue';
 import TheProject from './TheProject.vue';
+import TheTestimonial from './TheTestimonial.vue';
 
 
 export default{
@@ -15,6 +16,7 @@ export default{
         TheConsultants,
         TheAboutUs,
         TheProject,
+        TheTestimonial,
         
         
     }
@@ -32,6 +34,7 @@ export default{
         <TheConsultants></TheConsultants>
         <TheAboutUs></TheAboutUs>
         <TheProject></TheProject>
+        <TheTestimonail></TheTestimonail>
         
     </main>
     <!-- /main section -->
