@@ -47,30 +47,7 @@ export default {
                 "fa-brands fa-facebook",
                 "fa-brands fa-twitter"
             ],
-            show: false,
-            arrMessages: [
-                {
-                    message: 'ciao come posso esserti utile?',
-                    status: 'received',
-                    id: 0,
-                },
-                {
-                    message: 'ciao vorrei delle informazioni',
-                    status: 'sent',
-                    id: 1,
-                },
-                {
-                    message: 'su che prodotto?',
-                    status: 'received',
-                    id: 2,
-                },
-            ],
-            newMessage: {
-                message: '',
-                status: 'sent',
-            },
         }
-
     },
     methods: {
         scrollTop() {
