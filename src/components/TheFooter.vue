@@ -107,7 +107,7 @@ export default {
                     <p>Copyright @ 2020 Phlox Consulting. All Rights Reserved.</p>
                 </div>
                 <i class="fa-solid fa-arrow-up icon-arrow" @click="scrollTop"></i>
-                <i class="fa-regular fa-comment icon-comment" @click="showChat"></i>
+                <i class="fa-regular fa-comment icon-comment"></i>
                 
             </div>
             
