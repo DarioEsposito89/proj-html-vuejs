@@ -53,7 +53,7 @@ export default{
 
         <!-- help -->
         <div class="help">
-            <div class="row row-cols-2 d-flex justify-content-center align-items-center">
+            <div class="row row-cols-2 gx-0 d-flex justify-content-center align-items-center">
                 <div class="col-3"><h2>WE HELP TO DELIVER THE BUSINESS CASE</h2></div>
                 <div class="col-4"><p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow.</p></div>
             </div>

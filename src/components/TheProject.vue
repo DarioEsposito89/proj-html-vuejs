@@ -89,7 +89,7 @@ export default{
 
         <!-- project container -->
         <div class="project">
-            <div class="row d-flex justify-content-between align-items-center">
+            <div class="row gx-0 d-flex justify-content-between align-items-center">
                 <div class="title-project col-6 ms-5">
                     <div class="container-subtitle d-flex align-items-center gap-2">
                         <div class="line-green"></div>
