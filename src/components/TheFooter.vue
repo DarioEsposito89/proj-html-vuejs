@@ -57,39 +57,60 @@ export default{
     <section>
 
     <!-- footer top  -->
-    <div class="footer-top">
-        <div class="row row-cols-3 gx-0 d-flex justifi-content-between align-items-center">
-            <!-- logo -->
-        <div class="col-3 footer-logo">
-            <a href="" id="home">
-                <img src="../assets/images/logotype-2-139x23.png" alt="Phlox footer logo image">
-            </a>
-        </div>
-        <!-- /logo -->
+        <div class="container footer-top">
+            <div class="row row-cols-3 gx-0 d-flex justifi-content-between align-items-center">
+                <!-- logo -->
+            <div class="col-3 footer-logo d-flex justify-content-start">
+                <a href="" id="home">
+                    <img src="../assets/images/logotype-2-139x23.png" alt="Phlox footer logo image">
+                </a>
+            </div>
+            <!-- /logo -->
 
-        <!-- links -->
-        <ul class="col-6 links d-flex justify-content-center gap-4">
-            <li v-for="(item, index) in footerLinks" class="links-voices">
-                <a :href="item.href">{{ item.voice }}</a>
-            </li>
-        </ul>
-        <!-- /links -->
+            <!-- links -->
+            <ul class="col-6 links d-flex justify-content-center align-items-center gap-4">
+                <li v-for="(item, index) in footerLinks" class="links-voices">
+                    <a :href="item.href">{{ item.voice }}</a>
+                </li>
+            </ul>
+            <!-- /links -->
 
-        <!-- social -->
-        <ul class="col-3 social d-flex justify-content-center gap-4">
-            <li v-for="(item, index) in socialIcons">
-                <a href="#"><i :class="item"></i></a>
-            </li>
-        </ul>
-        <!-- /social -->
+            <!-- social -->
+            <ul class="col-3 social d-flex justify-content-end align-items-center gap-4">
+                <li v-for="(item, index) in socialIcons">
+                    <a href="#"><i :class="item"></i></a>
+                </li>
+            </ul>
+            <!-- /social -->
+            </div>
         </div>
-    </div>
-    <!-- /footer top -->
+        <!-- /footer top -->
 
     </section>
-    <!-- /section -->
+
+    <section>
+
+        <div class="container footer-bottom">
+            <hr>
+            <div class="row row-cols-2 gx-0 d-flex justify-content-between ">
+                <div class="col-5 terms">
+                    <p>Terms of use</p>
+                    <p>Privacy Environment Policy</p>
+                </div>
+
+                <div class="col-5 copyright d-flex justify-content-end align-items-center">
+                    <p>Copyright @ 2020 Phlox Consulting. All Rights Reserved.</p>
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+    </section>
+
 </template>
-<!-- /template section -->
+
 
 
 
@@ -97,9 +118,59 @@ export default{
 
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
-.row{
+// FOOTER TOP
+.container{
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    .links{
+        align-items: center;
+    }
+
+    ul{
+        margin-bottom: 0;
+    }
+
+    .links{
+        a{
+            color: $paragraph;
+
+            &:hover{
+                color: $icon-consultants-color;
+            }
+        }
+    }
+
+    .social{
+        a{
+            color: $text;
+
+            &:hover{
+                color: $icon-consultants-color;
+            }
+        }
+    }
     
+}
+
+// FOOTER BOTTOM
+hr{
+    color: $paragraph;
+    margin-bottom: 50px;
+}
+
+.terms{
+    color: $paragraph;
+}
+
+.copyright{
+    color: $paragraph;
+}
+
+p{
+    margin-bottom: 0;
 }
 
 </style>
