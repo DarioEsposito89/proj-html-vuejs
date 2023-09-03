@@ -106,9 +106,6 @@ export default {
                 <div class="col-5 copyright d-flex justify-content-end align-items-center">
                     <p>Copyright @ 2020 Phlox Consulting. All Rights Reserved.</p>
                 </div>
-                <i class="fa-solid fa-arrow-up icon-arrow" @click="scrollTop"></i>
-                <i class="fa-regular fa-comment icon-comment"></i>
-                
             </div>
             
             
@@ -182,36 +179,4 @@ hr{
 p{
     margin-bottom: 0;
 }
-
-
-    // arrow up formatting section
-    .fa-arrow-up{
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            margin-left: 10px;
-
-            &:hover{
-                background-color: rgb(85, 85, 85);
-                color: white;
-            }
-        }    
-
-    // message formatting gsection
-    .fa-comment{
-            background-color: #527ceb;
-            color: white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            margin-left: 10px;
-        }    
-    
-
 </style>
