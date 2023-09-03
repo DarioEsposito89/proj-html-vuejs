@@ -48,7 +48,7 @@ export default{
 
             <!-- blog cards -->
             <div class="blog-cards">
-                <div class="row row-cols-2">
+                <div class="row gx-0 row-cols-2">
                     <div class="col-12 d-flex justify-content-center gap-3">
                         <!-- general card -->
                         <div class="card" v-for="(item, index) in blogListCards">
