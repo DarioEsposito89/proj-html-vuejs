@@ -166,6 +166,14 @@ header{
             letter-spacing: 2.8px;
         }
 
+        button{
+
+            &:hover{
+                color: $text;
+                background-color: $icon-consultants-color;
+            }
+        }
+
         // paly botton formatting section
             i{
                 border: 1px solid white;
