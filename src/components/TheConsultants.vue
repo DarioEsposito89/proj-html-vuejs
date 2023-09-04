@@ -6,7 +6,7 @@ export default{
     name: "TheConsultats",
 
     components:{
-        store,
+        
     },
     data() {
         return {
