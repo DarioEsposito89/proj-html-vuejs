@@ -1,10 +1,8 @@
-<!-- script section -->
+<!-- SCRIPT -->
 <script>
 
-// import vue components codes
-import { store } from '/store';
 export default{
-    // name
+    // NAME
     name: "TheConsultats",
 
     components:{
@@ -12,6 +10,7 @@ export default{
     },
     data() {
         return {
+            // ARRAY ELEMENT SECTION
             consultansLinks: [
 
                 {
@@ -43,25 +42,27 @@ export default{
     }
 }
 </script>
-<!-- /script section -->
 
-
-
-<!-- tempalte section -->
+<!-- TEMPLATE -->
 <template>
     <section class="bg-white ms-5">
+        <!-- TITLE SECTION -->
         <div class="container-consultants">
             <div class="container-title d-flex align-items-center gap-4 mb-2">
                 <h2 class="pseudo">OUR CONSULTANTS CAN HELP YOU</h2>
                 <div class="line-divider"></div>
             </div>
-            
+
+            <!-- COTENT SECTION -->
             <div class="container">
                 <div class="row row-cols-2 ">
+
+                    <!-- V-FOR CONSULTANTS -->
                     <div class="col-5 d-flex gap-5 py-5" v-for="(item, index) in consultansLinks" :key="index">
                         <div class="icon me-2 mt-3">
                             <a class="rounded-circle p-3" href="#"><i :class="item.icon"></i></a>
                         </div>
+                        <!-- TITLE CONSULTANTS -->
                         <div class="description ms-2">
                             <h3 class="mb-3">{{ item.title }}</h3>
                             <p>{{ item.subtitle }}</p>
@@ -71,21 +72,20 @@ export default{
             </div>
         </div>
     </section>
-
 </template>
-<!-- /template section -->
 
-
-
-<!-- style section -->
+<!-- STYLE -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+// GREEN LINE 
 .line-divider{
     height: 3px;
     width: 798px;
     background-color: #39ffbf;
 }
+
+// CONSULTANTS
 .container-consultants{
     padding-left: 100px;
     padding-top: 100px;

@@ -1,8 +1,8 @@
-<!-- script section -->
+<!-- SCRIPT -->
 <script>
 
 export default{
-    // name
+    // NAME
     name:"TheAboutUs",
 
     data(){
@@ -12,26 +12,24 @@ export default{
     }
 }
 </script>
-<!-- /script section -->
 
 
-<!-- template section -->
+
+<!-- TEMPLATE -->
 <template>
     
 
-    <!-- about us section -->
+    <!-- ABOUT US -->
     <section class="about-us-section " id="about">
 
-        <!-- img -->
+        <!-- About us img -->
         <div class="about-us">
             <img src="../assets/images/business-people-working-together-on-project-and-5FHSKBL.jpg" alt="people talking">
         </div>
-        <!-- /img -->
+        
     
-        <!-- about us text -->
+        <!-- ABOUT US TEXT -->
         <div class="about-us-text">
-
-            <!-- container text -->
             <div class="container-text">
                 <div class="container-subtitle d-flex align-items-center gap-2">
                     <div class="line-green"></div>
@@ -40,41 +38,27 @@ export default{
                 <h3>WE MAKE YOUR STRATEGY WORK</h3>
                 <p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow plants are noticed by when i hear the buzz of the title world among the stalks, and grow familiar indescribable forms of the insects, and flies, then i feel the presence of the Almighty.</p>
             </div>
-            <!-- /container text -->
-
         </div>
-        <!-- /about us text -->
-            
     </section>
-    <!-- /about us section -->
     
-    <!-- help section -->
+    <!-- HELP  -->
     <section class="help-section green-btn d-flex">
-
-        <!-- help -->
         <div class="help">
             <div class="row row-cols-2 gx-0 d-flex justify-content-center align-items-center">
                 <div class="col-3"><h2>WE HELP TO DELIVER THE BUSINESS CASE</h2></div>
                 <div class="col-4"><p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow.</p></div>
             </div>
-
         </div>
-        <!-- /help -->
-
+        <!-- BUTTON ABOUT US -->
         <a href="#"><button type="button" class="btn red-btn btn-lg rounded-0 py-3 px-5 text-white">GET STARTED</button></a>
     </section>
-    <!-- /help section -->
-
 </template>
-<!-- /template section -->
 
-
-
-
+<!-- STYLE ABOUT US -->
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-
+// ABOUT US
 .about-us-section{
     display: flex;
 
@@ -130,6 +114,7 @@ export default{
     
 }
 
+// HELP
 .help-section{
     position: relative;
     .help{
@@ -148,7 +133,7 @@ export default{
             background-color: #1f1e38;
         }
     }
-        // anchor formatting section
+        
         a{
             position: absolute;
             bottom: 0px;
@@ -160,7 +145,7 @@ export default{
             font-family: 'Bai Jamjuree', sans-serif;
         }
 
-        // h2, p tipography
+        
         p{
                 padding: 3rem 2rem;
                 color: #1f1e38;
@@ -168,4 +153,3 @@ export default{
             
         }
 </style>
-<!-- /style section -->

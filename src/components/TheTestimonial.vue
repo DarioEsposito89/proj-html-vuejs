@@ -1,11 +1,13 @@
-<!-- script section -->
+<!-- SCRIPT -->
 <script>
 
 export default{
+    // NAME
     name:"TheTestimonial",
 
     data(){
         return{
+            // ARRAY OVERLAY ELEMENTS
             testimonialList: [
                 {
                     title: "Vera Duncan",
@@ -35,11 +37,7 @@ export default{
     methods:{
 
         changeMouse: function(item){
-            console.log("ok");
-            console.log(item.title);
-            console.log(item.mouse);
             item.mouse = true;
-            console.log(item.mouse);
         },
 
         deleteMouse: function(item){
@@ -52,15 +50,13 @@ export default{
     }
 }
 </script>
-<!-- /script section -->
 
 
-<!-- template section -->
+
+<!-- TEMPLATE -->
 <template>
-    <!-- section -->
     <section>
-
-        <!-- testimonial title block -->
+        <!-- TITLES -->
         <div class="testimonial-title">
             <div class="container-subtitle d-flex justify-content-right align-items-center gap-2">
                 <h2 class="text-align-right">TESTIMONIAL</h2>
@@ -68,9 +64,8 @@ export default{
             </div>
             <h3>WHAT'S THE CUSTOMER SAY<br> ABOUT OUR WORK</h3>
         </div>
-        <!-- /testimonial title block -->
 
-        <!-- testimonial list block -->
+        <!-- TESTIMONIAL -->
         <div class="testimonial-list">
             <div class="testimonial" v-for="(item, index) in testimonialList" @mouseenter="changeMouse(item)" @mouseleave="deleteMouse(item)" :class="item.mouse ? `background-${index + 1}`: ''">
                 <p>{{ item.description }}</p>
@@ -78,30 +73,23 @@ export default{
                 <h5>Amazon inc.</h5>
             </div>
         </div>
-        <!-- /testimonial list block -->
-
     </section>
-    <!-- /section -->
 </template>
-<!-- /template section -->
 
-
-
-
+<!-- STYLE -->
 <style lang ="scss" scoped>
     @use '../styles/partials/variables' as *;
 
     section{
         padding-top: 200px;
 
-// testimonial title formatting section
+// TITLES
 .testimonial-title{
     margin-right: 50px;
     .container-subtitle{
         display: flex;
         justify-content: right;
     
-        // h2 tipography
         h2{
             font-size: 16px;
             font-weight: 400px;
@@ -110,7 +98,6 @@ export default{
         }
     }
 
-    // h3 tipography
     h3{
         font-family: 'Bai Jamjuree', sans-serif;
         text-align: right;
@@ -118,15 +105,13 @@ export default{
         margin-top: 1.5rem;
     }
 
-    // h2, h3 tipography
     h2, h3{
         color: $text;
     }
 
 }
 
-// testimonial list formatting section
-
+// TESTIMONIAL
 .testimonial-list{
     background-color: white;
     display: flex;
@@ -134,7 +119,6 @@ export default{
     margin-left: auto;
     margin-top: 1.5rem;
 
-    // testimonial
     .testimonial{
         width: 33%;
         height: 20%;
@@ -142,27 +126,25 @@ export default{
         transition-duration: 1s;
     }
 
-    // p
     p{
         margin-bottom: 2rem;
         color: $paragraph;
     }
 
-    // h4 tipography
     h4{
         font-family: 'Bai Jamjuree', sans-serif;
         margin-bottom: .5rem;
         color: #1f1e38;
     }
 
-    // h5 tipography
     h5{
         color: #aaaaaa;
     }
 
 }
 
-// testimonial background formatting section
+// TESTIMONIAL BACKGROUND
+
 // background 1
 .testimonial.background-1{
     background-image: url('../assets/images/oliver-ragfelt-488196-2.jpg');
@@ -198,4 +180,3 @@ export default{
     
 }
 </style>
-<!-- /style section -->

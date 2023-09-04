@@ -1,8 +1,8 @@
-<!-- script section -->
+<!-- SCRIPT -->
 <script>
 
 export default{
-    // name
+    // NAME
     name: "TheTalkAboutWork",
 
     data(){
@@ -12,29 +12,24 @@ export default{
     }
 }
 </script>
-<!-- /script section -->
 
-
-
-<!-- template section -->
+<!-- TEMPLATE -->
 <template>
-    <!-- section -->
     <section>
         <h2>LET'S TALK ABOUT WORK</h2>
         <p>A Wonderful serenity has taken possession Far far away, behind the world mountains.</p>
         <a href="#"><button type="button" class="btn btn-lg rounded-0 py-3 px-5">GET STARTED</button></a>
     </section>
-    <!-- /section -->
 </template>
-<!-- /tempalte section -->
 
 
 
-<!-- style section -->
+
+<!-- STYLE -->
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-// section formatting
+
 section{
     padding: 7rem 0;
     margin-top: 250px;
@@ -49,7 +44,7 @@ section{
         font-family: 'Bai Jamjuree', sans-serif;
         font-size: 3rem;
     }
-    // p
+
     p{
         color: $paragraph;
         padding-top: 1rem;
@@ -68,4 +63,3 @@ section{
 
 }
 </style>
-<!-- /style -->

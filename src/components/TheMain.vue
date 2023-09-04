@@ -1,7 +1,7 @@
-<!-- script section -->
+<!-- SCRIPT -->
 <script>
 
-// import vue components codes
+// IMPORT VUE COMPONENTS
 import TheConsultants from './TheConsultants.vue';
 import TheAboutUs from './TheAboutUs.vue';
 import TheProject from './TheProject.vue';
@@ -11,7 +11,7 @@ import TheTalkAboutWork from './TheTalkAboutWork.vue';
 
 
 export default{
-    // name
+    // NAME
     name: "TheMain",
 
     components:{
@@ -26,14 +26,10 @@ export default{
     }
 }
 </script>
-<!-- /script section -->
 
-
-
-<!-- tempalte section -->
+<!-- TEMPLATE -->
 <template>
     
-    <!-- main -->
     <main>
         <TheConsultants></TheConsultants>
         <TheAboutUs></TheAboutUs>
@@ -41,17 +37,11 @@ export default{
         <TheTestimonial></TheTestimonial>
         <TheBlog></TheBlog>
         <TheTalkAboutWork></TheTalkAboutWork>
-
-        
     </main>
-    <!-- /main section -->
 
 </template>
-<!-- /template section -->
 
-
-
-<!-- style section -->
+<!-- STYLE -->
 <style lang="scss" scoped>
+
 </style>
-<!-- /style section -->

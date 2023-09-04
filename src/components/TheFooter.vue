@@ -1,13 +1,13 @@
-
+<!-- SCRIPT -->
 <script>
 
 export default {
-    // naame
+    // NAME
     name: "TheFooter",
 
     data() {
         return {
-            // array
+            // ARRAY LINKS
             footerLinks: [
                 {
                     voice: "HOME",
@@ -40,7 +40,7 @@ export default {
                 }
             ],
 
-            // array
+            // ARRAY ICONS SOCIAL
             socialIcons: [
                 "fa-brands fa-instagram",
                 "fa-brands fa-linkedin",
@@ -49,79 +49,68 @@ export default {
             ],
         }
     },
-    methods: {
-        scrollTop() {
-            window.scrollTo(0, 0);
-        },
-    }
 }
 </script>
 
-
+<!-- TEMPLATE -->
 <template>
     <section>
-
-    <!-- footer top  -->
+        <!-- FOOTER TOP -->
         <div class="container footer-top">
             <div class="row row-cols-3 gx-0 d-flex justifi-content-between align-items-center">
-                <!-- logo -->
-            <div class="col-3 footer-logo d-flex justify-content-start">
-                <a href="" id="home">
-                    <img src="../assets/images/logotype-2-139x23.png" alt="Phlox footer logo image">
-                </a>
-            </div>
-            <!-- /logo -->
 
-            <!-- links -->
-            <ul class="col-6 links d-flex justify-content-center align-items-center gap-4">
-                <li v-for="(item, index) in footerLinks" class="links-voices">
-                    <a :href="item.href">{{ item.voice }}</a>
-                </li>
-            </ul>
-            <!-- /links -->
+                <!-- LOGO -->
+                <div class="col-3 footer-logo d-flex justify-content-start">
+                    <a href="" id="home">
+                        <img src="../assets/images/logotype-2-139x23.png" alt="Phlox footer logo image">
+                    </a>
+                </div>
+                
+                <!-- LINKS -->
+                <ul class="col-6 links d-flex justify-content-center align-items-center gap-4">
+                    <!-- V-FOR PRINT LINKS -->
+                    <li v-for="(item, index) in footerLinks" class="links-voices">
+                        <a :href="item.href">{{ item.voice }}</a>
+                    </li>
+                </ul>
 
-            <!-- social -->
-            <ul class="col-3 social d-flex justify-content-end align-items-center gap-4">
-                <li v-for="(item, index) in socialIcons">
-                    <a href="#"><i :class="item"></i></a>
-                </li>
-            </ul>
-            <!-- /social -->
+                <!-- SOCIAL -->
+                <ul class="col-3 social d-flex justify-content-end align-items-center gap-4">
+                    <!-- V-FOR PRINT INCONS SOCIAL -->
+                    <li v-for="(item, index) in socialIcons">
+                        <a href="#"><i :class="item"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- /footer top -->
-
     </section>
 
+    <!-- FOOTER BOTTOM -->
     <section>
-
         <div class="container footer-bottom">
+
+            <!-- LINE DIVISOR -->
             <hr>
+
             <div class="row row-cols-2 gx-0 d-flex justify-content-between ">
+
+                <!-- POLICY PRIVACY -->
                 <div class="col-5 terms">
                     <p>Terms of use</p>
                     <p>Privacy Environment Policy</p>
                 </div>
 
+                <!-- COPYRIGHT -->
                 <div class="col-5 copyright d-flex justify-content-end align-items-center">
                     <p>Copyright @ 2020 Phlox Consulting. All Rights Reserved.</p>
                 </div>
             </div>
-            
-            
-
         </div>
-
     </section>
-
 </template>
 
 
-
-
-
-
-
+<!-- STYLE -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 

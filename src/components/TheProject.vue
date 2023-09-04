@@ -1,13 +1,13 @@
-<!-- script section -->
+<!-- SCRIPT -->
 <script>
 
 export default{
-    // name
+    // NAME
     name: "TheProject",
 
     data(){
         return{
-            // array
+            // ARRAY IMG CARDS
             cardsList:[
                 {
                     src: "DRY-1-790x592.jpg",
@@ -26,10 +26,10 @@ export default{
             ]
         }
     },
-    // methods
+
     methods:{
 
-        // position right method
+        // FUNCTION POSITION RIGHT
         getImgsPositionRight: function(){
             const result = new Array(3);
 
@@ -40,12 +40,11 @@ export default{
                     result[i - 1] = this.cardsList[i];
                 }
             }
-            // console.log("array start",this.cardsList);
-            // console.log("end array", result);
+
             this.cardsList = result;
         },
 
-        // position left method
+        // FUNCTION POSITION LEFT
         getImgsPositionLeft: function(){
             const result = new Array(3);
 
@@ -56,40 +55,37 @@ export default{
                     result[i + 1] = this.cardsList[i];
                 }
             }
-            // console.log(result);
-            // console.log(this.cardsList);
+            
             this.cardsList = result;
         },
 
-        // change mouse method
+        // CHANGE MOUSE
         changeMouse: function(item){
             item.mouse = true;
         },
 
-        // delete mouse method
+        // DELETE MOUSE
         deleteMouse: function(item){
             item.mouse = false;
         },
 
-        // images path method
+        // IMAGES PATH
         getImgsPath: function(url){
             return new URL(url, import.meta.url).href
         }
     }
 }
 </script>
-<!-- /script section -->
 
-
-
-<!-- template section -->
+<!-- TEMPLATE -->
 <template>
-    <!-- section -->
     <section id="projects">
 
-        <!-- project container -->
+        <!-- PROJECT -->
         <div class="project">
             <div class="row gx-0 d-flex justify-content-between align-items-center">
+
+                <!-- TITLE -->
                 <div class="title-project col-6 ms-5">
                     <div class="container-subtitle d-flex align-items-center gap-2">
                         <div class="line-green"></div>
@@ -97,24 +93,24 @@ export default{
                     </div>
                     <h3>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h3>
                 </div>
-                <!-- move slider block -->
+
+                <!-- MOVE SLIDER -->
                 <div class="move-slider col-2 text-white">
                     <ul class=" d-flex gap-4 align-items-center">
                         <li @click="getImgsPositionLeft" class="rounded-circle"><i class="fa-solid fa-arrow-left-long"></i></li>
                         <li @click="getImgsPositionRight" class="rounded-circle"><i class="fa-solid fa-arrow-right"></i></li>
                     </ul>
                 </div>
-                <!-- /move slider block -->
             </div>
 
-            <!-- slider block -->
+            <!-- SLIDER -->
             <div class="slider d-flex gap-5 justify-content-center mx-5">
 
-                <!-- general card -->
+                <!-- CARDS -->
                 <div class="card" v-for="(item, index) in cardsList" @mouseenter="changeMouse(item)" @mouseleave="deleteMouse(item)">
                     <img :src="getImgsPath(`../assets/images/${item.src}`)" alt="">
 
-                    <!-- general card text -->
+                    <!-- CARD TEXT -->
                     <div class="card-text" :class="!item.mouse ? 'none': ''">
                         <div class="text">
                             <h3>Purinky Products</h3>
@@ -122,28 +118,17 @@ export default{
                         </div>
                         <a href=""><i class="fa-solid fa-plus"></i></a>
                     </div>
-                    <!-- /general card text -->
-
                 </div>
-                <!-- /general card -->
-
             </div> 
-            <!-- /slider block -->
-
         </div>
-        <!-- /project container -->
-
     </section>
-    <!-- /section -->
 </template>
-<!-- /template section -->
 
-
-
-<!-- style section -->
+<!-- STYLE -->
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+// TITLE
 .title-project{
     margin-top: 200px;
     margin-bottom: 30px;
@@ -183,22 +168,21 @@ export default{
             font-size: 30px;
         }
 
+        // SLIDER
         .slider{
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
         
-        // card formatting section
+        // CARDS
         .card{
             position: relative;
             transition-duration: 1s;
 
-            // images formatting section
             img{
                 width: 440px;
             }
 
-            // card text formatting section
             .card-text{
                 display: flex;
                 justify-content: space-between;
@@ -209,8 +193,7 @@ export default{
                 align-items: end;
                 padding-left: 1rem;
                 padding-bottom: 1rem;
-
-                // anchor formatting section 
+                
                 a{
                     display: inline;
                     width: 30px;
@@ -222,19 +205,15 @@ export default{
                     text-align: center;
                 }
 
-                // p
+                
                 p{
                     color: $paragraph;
                 }
             }
 
-            // none formatting section
             .card-text.none{
                 visibility: hidden;
             }
-
         }
     }
-
 </style>
-<!-- /style section -->

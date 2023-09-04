@@ -2,12 +2,14 @@
 import { store } from '/store.js'
 
 export default {
+    // NAME
     name: "TheHeader",
     components: {
         store,
     },
     data() {
         return {
+            // ARRAY LINKS
             navigationLinks: [
 
                 {
@@ -43,6 +45,7 @@ export default {
         }
     },
     methods: {
+        // FUNCTION TO RETURN TO THE HEADER
         scrollTop() {
             window.scrollTo(0, 0);
         },
@@ -51,23 +54,34 @@ export default {
 </script>
 
 
-<!-- tempalte section -->
+<!-- TEMPLATE -->
 <template>
+    <!-- HEADER -->
     <header id="home">
+
+        <!-- IMG HEADER -->
         <img src="../assets/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="consulting people" class="background-img">
+
+        <!-- NAVBAR -->
         <nav class="mx-5 mb-5">
+            <!-- LOGO -->
             <div class="logo">
                 <img src="../assets/images/logotype.png" alt="Phlox logo">
             </div>
+            <!-- LIST LINKS -->
             <ul>
+                <!-- V-FOR PRINT LINKS -->
                 <li v-for="(item, index) in navigationLinks" :key="index">
                     <a class="text-white" :href="item.href">{{ item.voice }}</a>
                 </li>
             </ul>
         </nav>
+
+        <!-- JUMBOTRON -->
         <div class="jumbotron ms-5">
-            <!-- jumbotron container -->
             <div class="jumbotron-container">
+
+                <!-- TITLES -->
                 <div class="titles-jumbotron">
                     <div class="container-subtitle d-flex align-items-center gap-2">
                         <div class="line-green"></div>
@@ -76,20 +90,27 @@ export default {
                     <h1>THE BEST<br>BUSINESS<br>CONSULTING</h1>
                 </div>
                 
+                <!-- BUTTONS -->
                 <div class="btn-jumbotron">
                     <a href="#"><button type="button" class="btn green-btn btn-lg rounded-0 py-3 px-5 me-4">READ MORE</button></a>
                     <a href="#"><i class="fa-solid fa-play rounded-circle p-4"></i></a>
                 </div>
             </div>
-            <!-- /jumbotron container -->
         </div>
     </header>
+
+    <!-- ICON FIXED -->
     <section>
         <div class="icon-fixed d-flex justify-content-end gap-5 p-5 fixed-bottom fixed-right">
+            <!-- ARROW SCROLL TOP -->
             <i class="fa-solid fa-arrow-up icon-arrow" @click="scrollTop"></i>
+
+            <!-- CHAT -->
             <i class="fa-regular fa-comment icon-comment"></i>
         </div>
     </section>
+
+    <!-- LATERAL BUTTONS FIXED -->
     <div class="sticky-button">
         <div class="button-fixed">
             <a href="#">
@@ -111,21 +132,20 @@ export default {
         </div>
     </div>
 </template>
-<!-- /tempalte section -->
 
+<!-- STYLE -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-// nav formatting section
+// NAVBAR
 nav{
     display: flex;
     justify-content: space-between;
 
-    // list formatting section
+    // LIST LINKS
     ul{
         display: flex;
 
-        // list items
         li{
             padding: 1rem;
             color: $text;
@@ -140,11 +160,10 @@ nav{
         }
     }
 
-    // logo formatting section
+    // LOGO
     .logo{
         padding: 1rem;
 
-        // img formatting section
         img{
             width: 120px;
         }
@@ -152,10 +171,9 @@ nav{
 
 }
 
-// header formatting section
+// HEADER
 header{
     
-    // background image formatting section
     .background-img{
         position: absolute;
         width: 72%;
@@ -168,21 +186,19 @@ header{
     }
 }
 
-// jumbotron formatting section
+// JUMBOTRON
 .jumbotron{
     padding: 10rem 0;
     
-    // h3, h1 tipography
     h3, h1{
         color: $text;
     }
     
-    // jumbotron container formatting section
     .jumbotron-container{
         width: 80%;
         padding-left: 1rem;
 
-        // h1 tipography
+        
         h1{
             font-family: 'Bai Jamjuree', sans-serif;
             font-size: 106px;
@@ -190,7 +206,7 @@ header{
             line-height: 93px;
         }
 
-        // h3 tipography
+        
         h3{
             font-size: 16px;
             font-weight: 400px;
@@ -198,6 +214,7 @@ header{
             letter-spacing: 2.8px;
         }
 
+        // BUTTONS HEADER
         button{
             &:hover{
                 color: $text;
@@ -205,7 +222,6 @@ header{
             }
         }
 
-        // paly botton formatting section
             i{
                 border: 1px solid white;
                 color: #39ffbf; 
@@ -214,6 +230,7 @@ header{
     }
 }
 
+// ICONS FIXED
 .icon-fixed{
     
     .fa-arrow-up{
@@ -225,14 +242,17 @@ header{
             line-height: 30px;
             text-align: center;
             margin-left: 10px;
+            
 
             &:hover{
                 background-color: rgb(85, 85, 85);
                 color: white;
             }
-        }    
+        }   
+        
+        
 
-    // message formatting gsection
+    // CHAT
     .fa-comment{
             background-color: #527ceb;
             color: white;
@@ -245,7 +265,7 @@ header{
         }    
 }
 
-
+// LATERAL BUTTONS FIXED
 .aux-preview-button {
     transition-delay: 50ms;
 }
@@ -303,9 +323,7 @@ header{
                 81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
                 100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
             }
-            }
         }
-
-
+    }
 </style>
-<!-- /style section -->
+

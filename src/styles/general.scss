@@ -2,11 +2,12 @@
 @import "./partials/_bs_variables.scss";
 @import "bootstrap/scss/bootstrap.scss";
 
-// html formatting section
+// HTML FORMATTING
 html{
     scroll-behavior: smooth;
 }
 
+// BODY
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #242340;
@@ -14,18 +15,17 @@ body {
     background-size: cover;
 }
 
-// anchor general formatting section
 // anchor
 a{
     text-decoration: none;
 }
 
-// list general formatting section
 // unordered list
 ul{
     list-style-type: none;
 }
 
+// LINE GREEN
 .line-green{
     height: 3px;
     width: 60px;
